@@ -76,3 +76,9 @@ header {
 #root {
     color: var(--white);
 }
+@media screen and (max-width: 1600px) {
+    .main-title-container h1 {
+        font-size: 7em;
+        margin: 100px 0 50px 0;
+    }
+}
