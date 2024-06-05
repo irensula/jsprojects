@@ -1,0 +1,23 @@
+body {
+    font-family: "Bodoni Moda", serif;
+}
+.container {
+    color: purple;
+    width: 15em;
+}
+h1 {
+    font-size: 10em;
+}
+h2 {
+    font-size: 2.4em;
+}
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(135deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
