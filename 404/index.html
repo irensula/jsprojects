@@ -13,84 +13,9 @@
     <title>404</title>
 </head>
 <body>
-    <canvas ></canvas>
+    <canvas></canvas>
     
-    <script>
-        const canvas = document.querySelector("canvas");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        
-        const context = canvas.getContext("2d");
-        
-        context.font = "150px serif";
-        let gradient = context.createLinearGradient(0, 0, canvas.width, 0);
-        gradient.addColorStop("0", "magenta");
-        gradient.addColorStop("0.5", "blue");
-        gradient.addColorStop("1.0", "red");
-
-        const img = new Image();
-        img.src = '404.png'; 
-
-        const FPS = 30; //2
-        const radius = 50;
-        let x = 100;
-        let y = 100;
-        let xSpeed = 4; //8
-        let ySpeed = 6; //10
-
-        function clear() {
-            context.clearRect(0,0,canvas.width, canvas.height); 
-        }
-
-        function draw() {
-            context.beginPath();
-            // context.arc(x, y, radius, 0, 2 * Math.PI);
-            
-            context.fillStyle = gradient;
-            context.fillText("404", x, y);
-            // context.drawImage(img, x, y);
-            context.closePath();
-            context.fill();
-        }
-
-        function update() {
-            x = x + xSpeed;
-            y = y + ySpeed;
-            const isCollidingWithRightSide = (x + radius >= canvas.width);
-            if (isCollidingWithRightSide){
-                x = canvas.width - radius;
-                xSpeed = -xSpeed;
-            }
-            const isCollidingWithLeftSide = (x - radius <= 0 );
-            if (isCollidingWithLeftSide){
-                x = 0 + radius;
-                xSpeed = -xSpeed;
-            }
-
-            const isCollidingWithBottomSide = (y + radius >= canvas.height );
-            if (isCollidingWithBottomSide){
-                y = canvas.height - radius;
-                ySpeed = -ySpeed;
-            }
-
-            const isCollidingWithTopSide = (y - radius <= 0 );
-            if (isCollidingWithTopSide){
-                y = 0 + radius;
-                ySpeed = -ySpeed;
-            }
-        }
-
-        function animate() {
-            clear();
-            draw();
-            update(); 
-        }
-
-        window.setInterval(animate, 1000 / FPS);
-
-        
-
-    </script>
+    <script src="index.js"></script>
 
 </body>
 </html>
