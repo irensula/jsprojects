@@ -7,13 +7,16 @@ function readJson() {
         let div = document.getElementById("root");
         data.games.forEach(game => {
             
-            let element = document.createElement("p");
-            element.innerHTML = game.game_name.fi;
-            div.appendChild(element);
+            let elementDiv = document.createElement("div");
+            div.appendChild(elementDiv);
+
+            let elementH2 = document.createElement("h2");
+            elementH2.innerHTML = game.game_name.fi;
+            elementDiv.appendChild(elementH2);
 
             let img = document.createElement('img');
             img.src = game.game_image;
-            div.appendChild(img)
+            elementDiv.appendChild(img)
         });
     })
 }
