@@ -16,7 +16,31 @@ function readJson() {
 
             let img = document.createElement('img');
             img.src = game.game_image;
-            elementDiv.appendChild(img)
+            elementDiv.appendChild(img);
+
+            let description = document.createElement("p");
+            description.innerHTML = game.description.fi;
+            elementDiv.appendChild(description);
+
+            let genre = document.createElement("p");
+            genre.innerHTML = game.genre;
+            elementDiv.appendChild(genre);
+
+            let publisher = document.createElement("p");
+            publisher.innerHTML = game.publisher;
+            elementDiv.appendChild(publisher);
+
+            let launched_year = document.createElement("p");
+            launched_year.innerHTML = game.launched_year;
+            elementDiv.appendChild(launched_year);
+
+            let original_platforms = document.createElement("p");
+            original_platforms.innerHTML = gameoriginal_platforms;
+            elementDiv.appendChild(original_platforms);
+
+            let added_to_hall_of_fame = document.createElement("p");
+            added_to_hall_of_fame.innerHTML = game.added_to_hall_of_fame;
+            elementDiv.appendChild(added_to_hall_of_fame);
         });
     })
 }
