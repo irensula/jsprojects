@@ -2,7 +2,7 @@
     "games": [
         {
             "ID": 1,
-            "game_image": "images/The-Oregon-Trail-gallery-03.png",
+            "game_image": "images/img-1.png",
             "game_name": {
                 "en": "The Oregon Trail",
                 "fi": "Oregonin Polku"
@@ -129,7 +129,7 @@
         },
         {
             "ID": 2,
-            "game_image": "images/img-1.jpg",
+            "game_image": "images/img-2.jpg",
             "game_name": {
                 "en": "Pac-Man",
                 "fi": "Pac-Man"
@@ -166,7 +166,7 @@
         },
         {
             "ID": 3,
-            "game_image": "images/img-5.png",
+            "game_image": "images/img-3.png",
             "game_name": {
                 "en": "Space Invaders",
                 "fi": "Space Invaders"
@@ -203,7 +203,7 @@
         },
         {
             "ID": 4,
-            "game_image": "images/img-7.png",
+            "game_image": "images/img-4.png",
             "game_name": {
                 "en": "Donkey Kong",
                 "fi": "Donkey Kong"
@@ -240,7 +240,7 @@
         },
         {
             "ID": 5,
-            "game_image": "",
+            "game_image": "images/img-5.jpg",
             "game_name": {
                 "en": "Asteroids",
                 "fi": "Asteroids"
@@ -277,7 +277,7 @@
         },
         {
             "ID": 6,
-            "game_image": "",
+            "game_image": "images/img-6.jpg",
             "game_name": {
                 "en": "Defender",
                 "fi": "Defender"
@@ -314,7 +314,7 @@
         },
         {
             "ID": 7,
-            "game_image": "",
+            "game_image": "images/img-7.png",
             "game_name": {
                 "en": "Ms. Pac-Man",
                 "fi": "Ms. Pac-Man"
