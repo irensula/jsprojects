@@ -351,7 +351,7 @@
         },
         {
             "ID": 8,
-            "game_image": "",
+            "game_image": "images/img-8.png",
             "game_name": {
                 "en": "Centipede",
                 "fi": "Centipede"
@@ -388,7 +388,7 @@
         },
         {
             "ID": 9,
-            "game_image": "",
+            "game_image": "images/img-9.png",
             "game_name": {
                 "en": "Galaga",
                 "fi": "Galaga"
@@ -425,7 +425,7 @@
         },
         {
             "ID": 10,
-            "game_image": "",
+            "game_image": "images/img-10.png",
             "game_name": {
                 "en": "Frogger",
                 "fi": "Frogger"
@@ -462,7 +462,7 @@
         },
         {
             "ID": 11,
-            "game_image": "",
+            "game_image": "images/img-11.png",
             "game_name": {
                 "en": "Joust",
                 "fi": "Joust"
@@ -499,7 +499,7 @@
         },
         {
             "ID": 12,
-            "game_image": "",
+            "game_image": "images/img-12.png",
             "game_name": {
                 "en": "Q*bert",
                 "fi": "Q*bert"
@@ -536,7 +536,7 @@
         },
         {
             "ID": 13,
-            "game_image": "",
+            "game_image": "images/img-13.png",
             "game_name": {
                 "en": "Tron",
                 "fi": "Tron"
@@ -573,7 +573,7 @@
         },
         {
             "ID": 14,
-            "game_image": "",
+            "game_image": "images/img-14.jpg",
             "game_name": {
                 "en": "BurgerTime",
                 "fi": "BurgerTime"
