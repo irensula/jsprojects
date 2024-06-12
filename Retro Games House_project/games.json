@@ -351,7 +351,7 @@
         },
         {
             "ID": 8,
-            "game_image": "images/img-8.png",
+            "game_image": "images/img-8.jpg",
             "game_name": {
                 "en": "Centipede",
                 "fi": "Centipede"
@@ -388,7 +388,7 @@
         },
         {
             "ID": 9,
-            "game_image": "images/img-9.png",
+            "game_image": "images/img-9.jpg",
             "game_name": {
                 "en": "Galaga",
                 "fi": "Galaga"
@@ -462,7 +462,7 @@
         },
         {
             "ID": 11,
-            "game_image": "images/img-11.png",
+            "game_image": "images/img-11.jpg",
             "game_name": {
                 "en": "Joust",
                 "fi": "Joust"
@@ -610,7 +610,7 @@
         },
         {
             "ID": 15,
-            "game_image": "",
+            "game_image": "images/img-15.png",
             "game_name": {
                 "en": "Dig Dug",
                 "fi": "Dig Dug"
@@ -647,7 +647,7 @@
         },
         {
             "ID": 16,
-            "game_image": "",
+            "game_image": "images/img-16.jpg",
             "game_name": {
                 "en": "Tempest",
                 "fi": "Tempest"
@@ -684,7 +684,7 @@
         },
         {
             "ID": 17,
-            "game_image": "",
+            "game_image": "images/img-17.jpg",
             "game_name": {
                 "en": "Robotron: 2084",
                 "fi": "Robotron: 2084"
@@ -721,7 +721,7 @@
         },
         {
             "ID": 18,
-            "game_image": "",
+            "game_image": "images/img-18.jpg",
             "game_name": {
                 "en": "Zaxxon",
                 "fi": "Zaxxon"
@@ -758,7 +758,7 @@
         },
         {
             "ID": 19,
-            "game_image": "",
+            "game_image": "images/img-19.jpg",
             "game_name": {
                 "en": "Gauntlet",
                 "fi": "Gauntlet"
@@ -795,7 +795,7 @@
         },
         {
             "ID": 20,
-            "game_image": "",
+            "game_image": "images/img-20.png",
             "game_name": {
                 "en": "Bubble Bobble",
                 "fi": "Bubble Bobble"
@@ -832,7 +832,7 @@
         },
         {
             "ID": 21,
-            "game_image": "",
+            "game_image": "images/img-21.png",
             "game_name": {
                 "en": "Double Dragon",
                 "fi": "Double Dragon"

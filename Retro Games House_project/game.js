@@ -35,7 +35,7 @@ function readJson() {
             elementDiv.appendChild(launched_year);
 
             let original_platforms = document.createElement("p");
-            original_platforms.innerHTML = gameoriginal_platforms;
+            original_platforms.innerHTML = original_platforms;
             elementDiv.appendChild(original_platforms);
 
             let added_to_hall_of_fame = document.createElement("p");
