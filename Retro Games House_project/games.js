@@ -22,3 +22,10 @@ function readJson() {
 }
 
 readJson();
+ 
+// link  
+function createURL() { 
+    let keyword = document.getElementById("keyword").value; 
+    let url = "http://example.com/search?q=" + keyword; 
+    window.location = url; 
+}
