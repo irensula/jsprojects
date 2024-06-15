@@ -4,11 +4,12 @@ function readJson() {
         return res.json();
     })
     .then((data) => {
-        let div = document.getElementById("root");
+        let div = document.getElementById("game-container");
         data.games.forEach(game => {
             
             let elementDiv = document.createElement("div");
             div.appendChild(elementDiv);
+            elementDiv.classList.add("elementDiv");
 
             let elementH2 = document.createElement("h2");
             elementH2.innerHTML = game.game_name.fi;
@@ -29,3 +30,4 @@ function createURL() {
     let url = "http://example.com/search?q=" + keyword; 
     window.location = url; 
 }
+// createURL();

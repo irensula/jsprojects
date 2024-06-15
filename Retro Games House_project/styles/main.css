@@ -35,24 +35,24 @@ header {
 .main-image-container {
     width: 50%;
 }
-.games-container {
+#game-container {
     display: flex;
     flex-wrap: wrap;
     color: var(--white);
     font-family: "VT323", monospace;
     font-size: 2em;
 }
-.games-container h2 {
+.elementDiv h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
-.game-container {
+.elementDiv {
     text-align: center;
     width: 30%;
     object-fit: cover;
     margin-right: 1em;
 }
-.game-container img {
+.elementDiv img {
     width: 100%;  
 }
 /* buttons */
