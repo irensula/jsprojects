@@ -42,7 +42,7 @@ header {
     font-family: "VT323", monospace;
     font-size: 2em;
 }
-.elementDiv h2 {
+#link {
     font-size: 2em;
     margin-bottom: 20px;
 }

@@ -11,23 +11,39 @@ function readJson() {
             div.appendChild(elementDiv);
             elementDiv.classList.add("elementDiv");
 
-            let elementH2 = document.createElement("h2");
-            elementH2.innerHTML = game.game_name.fi;
-            elementDiv.appendChild(elementH2);
+            let link = document.createElement("a");
+            link.innerHTML = game.game_name.fi;
+            elementDiv.appendChild(link);
+            link.setAttribute('id','link');
+
+            //link
+            const linkGame = document.getElementById("link");
+            let url = 'http://127.0.0.1:5500/';
+            let urlObj = new URL(url);
+            let idGames = data.games[0].ID;
+            urlObj.searchParams.append("id", idGames);
+            linkGame.href = urlObj;
 
             let img = document.createElement('img');
             img.src = game.game_image;
-            elementDiv.appendChild(img)
+            elementDiv.appendChild(img);
+
         });
     })
 }
 
 readJson();
  
-// link  
-function createURL() { 
-    let keyword = document.getElementById("keyword").value; 
-    let url = "http://example.com/search?q=" + keyword; 
-    window.location = url; 
-}
-// createURL();
+// link
+
+// const cameras = [{
+//     _id: "Camera1"
+// }];
+// const linkProduct = document.getElementById("linkProduct");
+
+// let url = 'file:///D:/openclassrooms/projet5/orinoco/product.html';
+// let urlObj = new URL(url);
+// let idCameras = cameras[0]._id;
+// urlObj.searchParams.append("id", idCameras);
+// linkProduct.href = urlObj;
+// <a id="linkProduct">Click</a>
