@@ -76,6 +76,9 @@ header {
 #root {
     color: var(--white);
 }
+.gameImg {
+    width: 300px;
+}
 @media screen and (max-width: 1600px) {
     .main-title-container h1 {
         font-size: 7em;

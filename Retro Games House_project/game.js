@@ -17,6 +17,7 @@ function readJson() {
             let img = document.createElement('img');
             img.src = game.game_image;
             elementDiv.appendChild(img);
+            img.classList.add("gameImg");
 
             let description = document.createElement("p");
             description.innerHTML = game.description.fi;
