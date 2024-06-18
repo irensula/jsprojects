@@ -18,7 +18,7 @@ function readJson() {
 
             //link
             const linkGame = document.getElementById("link");
-            let url = 'http://127.0.0.1:5500/';
+            let url = 'http://127.0.0.1:5500/game.html';
             let urlObj = new URL(url);
             let idGames = data.games[0].ID;
             urlObj.searchParams.append("id", idGames);

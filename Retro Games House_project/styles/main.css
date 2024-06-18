@@ -21,6 +21,9 @@ header {
     font-family: "VT323", monospace;
     color: var(--red);
 }
+.inner-header {
+    height: 10em;
+}
 .flex-container {
     display: flex;
 }
