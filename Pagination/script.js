@@ -441,7 +441,7 @@ let tableData = [{
 
 let state = {
     'querySet': tableData,
-    'page': 1,
+    'page': 5,
     'rows': 5
 }
 buildTable()
@@ -455,6 +455,15 @@ function pagination(querySet, page, rows) {
     return{
         'querySet': trimmedData,
         'pages': pages
+    }
+}
+
+function pageButtons(pages) {
+    let wrapper = document.getElementById('pagination-wrapper')
+    wrapper.innerHTML = ''
+
+    for (let page = 1; page <= pages; page++) {
+        wrapper.innerHTML += `<button value=${page} class="page btn btn-sm btn-info"> ${page}</button>`
     }
 }
 
@@ -473,4 +482,5 @@ function buildTable() {
         </tr>`
         table.append(row)
     }
+    pageButtons(data.pages)
 }
