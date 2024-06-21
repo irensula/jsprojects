@@ -441,8 +441,9 @@ let tableData = [{
 
 let state = {
     'querySet': tableData,
-    'page': 5,
-    'rows': 5
+    'page': 1,
+    'rows': 5,
+    'window': 5
 }
 buildTable()
 
@@ -462,9 +463,39 @@ function pageButtons(pages) {
     let wrapper = document.getElementById('pagination-wrapper')
     wrapper.innerHTML = ''
 
-    for (let page = 1; page <= pages; page++) {
+    let maxLeft = (state.page - Math.floor(state.window / 2))
+    let maxRight = (state.page + Math.floor(state.window / 2))
+
+    if(maxLeft < 1) {
+        maxLeft = 1
+        maxRight = state.window
+    }
+
+    if (maxRight > pages) {
+        maxLeft = pages - (state.window - 1)
+
+        maxRight = pages
+
+        if(maxLeft < 1 ) {
+            maxLeft = 1
+        }
+    }
+
+    for (let page = maxLeft; page <= maxRight; page++) {
         wrapper.innerHTML += `<button value=${page} class="page btn btn-sm btn-info"> ${page}</button>`
     }
+    if (state.page != 1) {
+        wrapper.innerHTML = `<button value=${1} class="page btn btn-sm btn-info">&#171 Firts</button>` + wrapper.innerHTML
+    }
+    if (state.page != pages) {
+        wrapper.innerHTML += `<button value=${pages} class="page btn btn-sm btn-info">&#187 Last</button>`
+    }
+    $('.page').on('click', function() {
+        $('#table-body').empty()
+        state.page = $(this).val()
+
+        buildTable()
+    })
 }
 
 function buildTable() {
