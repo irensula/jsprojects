@@ -492,7 +492,7 @@ function pageButtons(pages) {
     }
     $('.page').on('click', function() {
         $('#table-body').empty()
-        state.page = $(this).val()
+        state.page = Number($(this).val())
 
         buildTable()
     })
