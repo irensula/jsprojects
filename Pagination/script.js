@@ -515,3 +515,22 @@ function buildTable() {
     }
     pageButtons(data.pages)
 }
+
+
+// function readJson() {
+//     fetch("./data.json")
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         let div = document.getElementById("root");
+//         data.games.forEach(game => {
+            
+//             let elementDiv = document.createElement("div");
+//             div.appendChild(elementDiv);
+
+//         });
+//     })
+// }
+
+// readJson();
