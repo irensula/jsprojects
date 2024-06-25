@@ -36,7 +36,7 @@ function pageButtons(pages) {
 
     let maxLeft = (state.page - Math.floor(state.window / 2))
     let maxRight = (state.page + Math.floor(state.window / 2))
-
+    // not to go below 0
     if(maxLeft < 1) {
         maxLeft = 1
         maxRight = state.window
@@ -89,21 +89,6 @@ function buildTable() {
 })
 }
 
-// function fetchJSONData() {
-//     fetch("./data.json")
-//         .then((res) => {
-//             if (!res.ok) {
-//                 throw new Error
-//                     (`HTTP error! Status: ${res.status}`);
-//             }
-//             return res.json();
-//         })
-//         .then((data) => 
-//               console.log(data))
-//         .catch((error) => 
-//                console.error("Unable to fetch data:", error));
-// }
-// fetchJSONData();
 
 // https://www.youtube.com/watch?v=mslD-bpvjiU&t=9s
 // https://www.youtube.com/watch?v=XI32vPPwSkU
