@@ -1,6 +1,5 @@
- {
-    "tableData": [
-        {
+[ 
+{
     "first_name": "Russell",
     "last_name": "Wilson",
     "rank": "1"
@@ -440,5 +439,4 @@
     "last_name": "Doe",
     "rank": "22"
 }
-    ]
-}
+]
