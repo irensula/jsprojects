@@ -61,16 +61,28 @@ function pageButtons(pages) {
     if (state.page != pages) {
         wrapper.innerHTML += `<button value=${pages} class="page btn btn-sm btn-info">&#187 Last</button>`
     }
-    $('.page').on('click', function() {
-        $('#table-body').empty()
-        state.page = Number($(this).val())
+    // $('.page').on('click', function() {
+    //     $('#table-body').empty()
+    //     state.page = Number($(this).val())
+
+    //     buildTable()
+    // })
+
+    // var searchElement = document.createElement("div");
+    // document.querySelector(".search-container").appendChild(searchElement);
+    // // Add an event listener to the element
+    // searchElement.addEventListener("click", handleClick);
+    document.querySelector('.page').addEventListener("click", (e) => { 
+        document.getElementById("table-body").empty()
+        state.page = Number(this.value)
 
         buildTable()
     })
 }
 
 function buildTable() {
-    let table = $('#table-body')
+    // let table = $('#table-body')
+    let table = document.getElementById('table-body')
     let data = pagination(state.querySet, state.page, state.rows)
     console.log('Data: ', data)
     
