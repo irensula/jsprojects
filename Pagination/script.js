@@ -70,8 +70,10 @@ function pageButtons(pages) {
 
     // var searchElement = document.createElement("div");
     // document.querySelector(".search-container").appendChild(searchElement);
-    // // Add an event listener to the element
     // searchElement.addEventListener("click", handleClick);
+    let paginationWrapper = document.getElementById("pagination-wrapper");
+    document.querySelector(".page").appendChild(page);
+    page.addEventListener("click", handleClick);
     document.querySelector('.page').addEventListener("click", (e) => { 
         document.getElementById("table-body").empty()
         state.page = Number(this.value)
