@@ -17,9 +17,10 @@ nav li {
     cursor: pointer;
 }
 header {
-    height: 100vh;
+    height: calc(100vh - 5em);
     font-family: "VT323", monospace;
     color: var(--red);
+    margin-bottom: 4em;
 }
 .inner-header {
     height: 10em;
@@ -30,6 +31,7 @@ header {
 .main-title-container {
     width: 50%;
     text-transform: uppercase;
+    overflow: hidden;
 }
 .main-title-container h1 {
     font-size: 10em;
