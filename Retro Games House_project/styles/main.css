@@ -2,9 +2,19 @@
     --black: #000;
     --red: #D52429;
     --white: #fff;
+    --dark-purple: #3d0e28;
+    --purple: #681646;
+    --light-purple: #c955ab;
+    --dark-blue: #161d3d;
+    --blue: #2b60bf;
+    --light-blue: #31a8f4
 }
 body {
-    background-color: var(--black);
+    background: rgb(104,22,70);
+    background: linear-gradient(162deg, rgba(0,0,0,1) 0%, rgba(201,85,171,1) 50%, rgba(49,168,244,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0 8em;
 }
 nav {
@@ -19,7 +29,7 @@ nav li {
 header {
     height: calc(100vh - 5em);
     font-family: "VT323", monospace;
-    color: var(--red);
+    color: var(--light-blue);
     margin-bottom: 4em;
 }
 .inner-header {
