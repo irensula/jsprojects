@@ -109,6 +109,13 @@ header {
 .gameImg {
     width: 300px;
 }
+.title {
+    font-size: 3em;
+    color: var(--light-blue);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "VT323", monospace;
+}
 @media screen and (max-width: 1600px) {
     .main-title-container h1 {
         font-size: 7em;

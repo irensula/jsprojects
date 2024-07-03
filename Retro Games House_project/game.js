@@ -13,6 +13,7 @@ function readJson() {
             let elementH2 = document.createElement("h2");
             elementH2.innerHTML = game.game_name.fi;
             elementDiv.appendChild(elementH2);
+            elementH2.setAttribute('class','title');
 
             let img = document.createElement('img');
             img.src = game.game_image;
@@ -36,7 +37,7 @@ function readJson() {
             elementDiv.appendChild(launched_year);
 
             let original_platforms = document.createElement("p");
-            original_platforms.innerHTML = original_platforms;
+            original_platforms.innerHTML = game.original_platforms;
             elementDiv.appendChild(original_platforms);
 
             let added_to_hall_of_fame = document.createElement("p");
