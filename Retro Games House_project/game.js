@@ -23,6 +23,7 @@ function readJson() {
             let description = document.createElement("p");
             description.innerHTML = game.description.fi;
             elementDiv.appendChild(description);
+            description.setAttribute('class','description');
 
             let genre = document.createElement("p");
             genre.innerHTML = game.genre;

@@ -116,6 +116,11 @@ header {
     text-transform: uppercase;
     font-family: "VT323", monospace;
 }
+.description {
+    font-size: 20px;
+    font-family: "PT Mono", monospace;
+    
+}
 @media screen and (max-width: 1600px) {
     .main-title-container h1 {
         font-size: 7em;
