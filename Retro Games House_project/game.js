@@ -20,30 +20,33 @@ function readJson() {
             elementDiv.appendChild(img);
             img.classList.add("gameImg");
 
+            let infoDiv = document.createElement("div");
+            elementDiv.appendChild(infoDiv);
+            infoDiv.setAttribute('class', 'infoDiv')
+
             let description = document.createElement("p");
             description.innerHTML = game.description.fi;
-            elementDiv.appendChild(description);
-            description.setAttribute('class','description');
+            infoDiv.appendChild(description);
 
             let genre = document.createElement("p");
-            genre.innerHTML = game.genre;
-            elementDiv.appendChild(genre);
+            genre.innerHTML = 'Genre: ' + game.genre;
+            infoDiv.appendChild(genre);
 
             let publisher = document.createElement("p");
-            publisher.innerHTML = game.publisher;
-            elementDiv.appendChild(publisher);
+            publisher.innerHTML = 'Kustantaja: ' + game.publisher;
+            infoDiv.appendChild(publisher);
 
             let launched_year = document.createElement("p");
-            launched_year.innerHTML = game.launched_year;
-            elementDiv.appendChild(launched_year);
+            launched_year.innerHTML = 'Vuosi: ' + game.launched_year;
+            infoDiv.appendChild(launched_year);
 
             let original_platforms = document.createElement("p");
-            original_platforms.innerHTML = game.original_platforms;
-            elementDiv.appendChild(original_platforms);
+            original_platforms.innerHTML = 'Alkuperäiset alustat: ' + game.original_platforms;
+            infoDiv.appendChild(original_platforms);
 
             let added_to_hall_of_fame = document.createElement("p");
-            added_to_hall_of_fame.innerHTML = game.added_to_hall_of_fame;
-            elementDiv.appendChild(added_to_hall_of_fame);
+            added_to_hall_of_fame.innerHTML = 'Lisätty Hall of Fameen: ' + game.added_to_hall_of_fame;
+            infoDiv.appendChild(added_to_hall_of_fame);
         });
     })
 }

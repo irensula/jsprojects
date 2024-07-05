@@ -116,10 +116,10 @@ header {
     text-transform: uppercase;
     font-family: "VT323", monospace;
 }
-.description {
+.infoDiv {
     font-size: 20px;
     font-family: "PT Mono", monospace;
-    
+    line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
     .main-title-container h1 {
