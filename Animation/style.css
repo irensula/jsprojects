@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+.wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    -webkit-box-reflect: below 0 linear-gradient(transparent, white);
+}
+
+.wave span {
+    display: inline-block;
+    font-size: 5vw;
+    animation: wave 4s infinite calc(.1s * var(--i));
+    color: purple;
+    margin-left: 30px;
+}
+
+@keyframes wave {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
