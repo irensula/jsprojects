@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speach</title>
+</head>
+<body>
+    <h1>Text-to-Speach</h1>
+    <textarea name="" id="textInput" rows="5" cols="50" placeholder="Enter text to read aloud"></textarea>
+    <button onclick="speak()">Speak</button>
+    <button onclick="stopSpeaking()">Stop</button>
+
+    <a href="finnish.html">Finnish</a>
+    <a href="stuckoverflow.html">SOF</a>
+
+    <script>
+        function speak() {
+            const text = document.getElementById('textInput').value;
+            // trim() method removes whitespace from both sides of a string
+            if (text.trim() === "") {
+                alert("Please enter some text");
+            }
+        
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1; // spead (0.1 to 10)
+        utterance.pitch = 1; // pitch (0 to 2)
+        utterance.volume = 1; // volume (0 to 1)
+        utterance.lang = "fi-FI"; 
+
+        speechSynthesis.speak(utterance);
+    }
+        function stopSpeaking() {
+            speechSynthesis.cancel();
+        }
+
+        // SpeechSynthesisUtterance: объект, содержащий текст для озвучивания и настройки (скорость, громкость, высота голоса).
+        // speechSynthesis.speak(): запускает воспроизведение текста.
+        // speechSynthesis.cancel(): останавливает воспроизведение.
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish TTS</title>
+</head>
+<body>
+    <textarea id="textInput" placeholder="Введите текст на финском" rows="5" cols="40"></textarea>
+    <button onclick="synthesize()">Озвучить</button>
+    <script>
+        function synthesize() {
+            const text = document.getElementById('textInput').value; // Получение текста из textarea
+            const utterance = new SpeechSynthesisUtterance(text);
+
+            // Получение доступных голосов (может потребоваться задержка для загрузки голосов)
+            const voices = window.speechSynthesis.getVoices();
+            const finnishVoice = voices.find(voice => voice.lang === "en-GB");
+
+            if (finnishVoice) {
+                utterance.voice = finnishVoice; // Установка финского голоса
+            } else {
+                console.warn("Финский голос не найден. Проверьте доступные голоса.");
+            }
+
+            utterance.lang = "en-GB"; // Установка языка для синтезатора
+            speechSynthesis.speak(utterance);
+        }
+
+        // Обновление голосов, если они еще не загружены
+        window.speechSynthesis.onvoiceschanged = () => {
+            console.log("Доступные голоса:", speechSynthesis.getVoices());
+        };
+    </script>
+</body>
+</html>
