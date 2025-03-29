@@ -1,5 +1,25 @@
-.container {
-    width: 750px;
+#container {
+    width: 1000px;
     height: 500px;
-    background-color: white;
+    background-color: lightgrey;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin: auto;
+}
+#car {
+    width: 100px;
+    position: absolute;
+    transition: bottom 0.2s ease-out;
+}
+#car img {
+    width: 100%;
+}
+#traffic-lights {
+    width: 80px;
+    position: absolute;
+    left: 600px;
+}
+#traffic-lights img {
+    width: 100%; 
 }
