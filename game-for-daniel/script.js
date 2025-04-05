@@ -1,16 +1,15 @@
 const car = document.getElementById('car');
-const container = document.getElementById('container');
 let position = 0;
 let speed = 3;
 let jumping = false;
 
 function move() {
-    let containerWidth = container.clientWidth;
+    let windowWidth = window.innerWidth;
     
-    if (position < containerWidth) {
+    if (position < windowWidth) {
         position += speed;
     } else {
-        position = 250;
+        position = -100;
     }
     car.style.left = position + "px";
     requestAnimationFrame(move);

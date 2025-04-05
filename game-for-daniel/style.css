@@ -1,16 +1,15 @@
-#container {
-    width: 1000px;
-    height: 500px;
-    background-color: lightgrey;
-    display: flex;
-    align-items: flex-end;
+body {
+    margin: 0;
     overflow: hidden;
-    margin: auto;
+    position: relative;
+    height: 500px;
 }
 #car {
-    width: 100px;
     position: absolute;
-    transition: bottom 0.2s ease-out;
+    bottom: 175px;
+    left: 0;
+    transition: bottom 0.2s linear;
+    width: 125px;
 }
 #car img {
     width: 100%;
@@ -18,8 +17,19 @@
 #traffic-lights {
     width: 80px;
     position: absolute;
-    left: 600px;
+    left: 60%;
+    bottom: 177px;
 }
 #traffic-lights img {
     width: 100%; 
+}
+#tree-1 {
+    position: absolute;
+    bottom: 175px;
+    left: 0;
+    transition: bottom 0.1s linear;
+    width: 100px;
+}
+#tree-1 img {
+    width: 100%;
 }
